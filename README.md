@@ -263,7 +263,7 @@ pip install -r requirements.txt
 
 # 3. Configure Environment
 cat > .env << EOF
-MONGO_URL=mongodb://localhost:27017
+MONGO_URL={your uri}
 DB_NAME=etl_ml_dashboard
 EOF
 
@@ -522,6 +522,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with precision for scale. Designed for humans.**
 
-[Report Bug](https://github.com/Mattral/ETL-ML/issues) • [Request Feature](https://github.com/Mattral/ETL-ML/issues)
+[Report Bug](https://github.com/Mattral/Integrated-ETL-and-Machine-Learning-Workflow-Management-System/issues) • [Request Feature](https://github.com/Mattral/Integrated-ETL-and-Machine-Learning-Workflow-Management-System/issues)
 
 </div>
