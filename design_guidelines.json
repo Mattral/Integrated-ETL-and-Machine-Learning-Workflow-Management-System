@@ -1,0 +1,178 @@
+{
+  "project_name": "ETL & ML Dashboard",
+  "theme": "dark",
+  "design_philosophy": {
+    "archetype": "The Performance Pro",
+    "core_values": ["Density", "Precision", "Real-time"],
+    "vibe": "Mission Control, Tactical, Developer-First"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Inter, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl font-bold tracking-tight",
+      "h2": "text-2xl font-semibold tracking-tight",
+      "h3": "text-xl font-semibold",
+      "body": "text-sm leading-relaxed",
+      "small": "text-xs text-muted-foreground",
+      "code": "font-mono text-xs"
+    }
+  },
+  "colors": {
+    "background": "#09090b",
+    "foreground": "#fafafa",
+    "card": {
+      "background": "#121212",
+      "foreground": "#fafafa",
+      "border": "rgba(255, 255, 255, 0.08)"
+    },
+    "popover": {
+      "background": "#09090b",
+      "foreground": "#fafafa"
+    },
+    "primary": {
+      "default": "#2563eb",
+      "foreground": "#fafafa",
+      "hover": "#1d4ed8"
+    },
+    "secondary": {
+      "default": "#27272a",
+      "foreground": "#fafafa"
+    },
+    "muted": {
+      "default": "#27272a",
+      "foreground": "#a1a1aa"
+    },
+    "accent": {
+      "default": "#27272a",
+      "foreground": "#fafafa"
+    },
+    "destructive": {
+      "default": "#7f1d1d",
+      "foreground": "#fafafa"
+    },
+    "border": "rgba(255, 255, 255, 0.08)",
+    "input": "rgba(255, 255, 255, 0.08)",
+    "ring": "#2563eb",
+    "status": {
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444",
+      "info": "#3b82f6",
+      "running": "#8b5cf6"
+    }
+  },
+  "layout": {
+    "container": "max-w-[1600px] mx-auto p-6",
+    "spacing": {
+      "section_gap": "gap-6",
+      "card_padding": "p-5",
+      "internal_padding": "p-4"
+    },
+    "grid": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "bento_cards": {
+        "hero": "col-span-full md:col-span-8 lg:col-span-9 row-span-2",
+        "sidebar": "col-span-full md:col-span-4 lg:col-span-3 row-span-2",
+        "stat_card": "col-span-1 md:col-span-4 lg:col-span-3",
+        "list_card": "col-span-1 md:col-span-6 lg:col-span-4 row-span-2"
+      }
+    },
+    "radius": "rounded-sm"
+  },
+  "components": {
+    "buttons": {
+      "default": "rounded-sm font-medium transition-all active:scale-95",
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_10px_rgba(37,99,235,0.2)]",
+      "outline": "border border-input bg-transparent hover:bg-accent hover:text-accent-foreground",
+      "ghost": "hover:bg-accent hover:text-accent-foreground",
+      "destructive": "bg-destructive text-destructive-foreground hover:bg-destructive/90"
+    },
+    "cards": {
+      "default": "rounded-sm border border-border bg-card text-card-foreground shadow-sm",
+      "hover_effect": "hover:border-primary/50 transition-colors duration-200"
+    },
+    "inputs": {
+      "default": "rounded-sm border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-md bg-black/40 border-b border-white/5",
+    "gradients": {
+      "subtle_glow": "bg-gradient-to-tr from-primary/10 via-transparent to-transparent"
+    },
+    "shadows": {
+      "neon": "shadow-[0_0_5px_rgba(59,130,246,0.5)]"
+    },
+    "borders": {
+      "tech": "border-l-2 border-primary"
+    }
+  },
+  "libraries": {
+    "charts": "recharts",
+    "icons": "lucide-react",
+    "flow_diagrams": "reactflow",
+    "terminal": "xterm",
+    "tables": "@tanstack/react-table",
+    "notifications": "sonner",
+    "forms": "react-hook-form + zod"
+  },
+  "media": {
+    "images": {
+      "login_bg": {
+        "url": "https://images.pexels.com/photos/17483870/pexels-photo-17483870.png",
+        "alt": "Abstract Neural Network Visualization",
+        "usage": "Login page background, subtle opacity"
+      },
+      "dashboard_hero_bg": {
+        "url": "https://images.unsplash.com/photo-1680992046626-418f7e910589",
+        "alt": "Server Rack Infrastructure",
+        "usage": "Settings or Infrastructure card background, heavily darkened"
+      }
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure text-to-background contrast ratio of at least 4.5:1 for normal text.",
+    "focus_states": "Visible focus rings (ring-2 ring-primary) on all interactive elements.",
+    "aria": "Use aria-labels for icon-only buttons."
+  },
+  "instructions_to_main_agent": [
+    "Initialize the frontend using Vite + React + Tailwind + TypeScript (if allowed, otherwise JS).",
+    "Install 'shadcn-ui' components (button, card, input, table, badge, dialog, select, tabs, form, sonner, scroll-area).",
+    "Install 'recharts' for data visualization (Pipeline stats, ML metrics).",
+    "Install 'reactflow' for the ETL Pipeline visualizer (DAG view).",
+    "Install 'lucide-react' for icons.",
+    "Use the 'dark' class on the html element by default.",
+    "Implement a Sidebar layout (Left fixed sidebar, main content area on right).",
+    "Use the Bento Grid layout for the Dashboard Overview.",
+    "Ensure the 'Logs' viewer uses a monospaced font and dark background to mimic a terminal.",
+    "Use 'sonner' for all toast notifications (success/error).",
+    "For the 'Experiments' page, use a dense table layout to compare metrics across many runs.",
+    "IMPORTANT: Do not use gradients for backgrounds. Keep them solid dark (#09090b) or very subtle noise if needed.",
+    "Use the provided image URLs only for the Login page or specific 'Visual' cards. Do not clutter the main dashboard with images."
+  ],
+  "universal_guidelines": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts"
+  ]
+}

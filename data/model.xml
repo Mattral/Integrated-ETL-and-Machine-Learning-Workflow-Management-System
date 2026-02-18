@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_3" xmlns:data="http://jpmml.org/jpmml-model/InlineTable" version="4.3">
+	<Header>
+		<Application name="JPMML-SparkML" version="1.6.0"/>
+		<Timestamp>2021-10-14T20:19:42Z</Timestamp>
+	</Header>
+	<DataDictionary>
+		<DataField name="class" optype="categorical" dataType="string">
+			<Value value="Walk"/>
+			<Value value="Getup_bed"/>
+			<Value value="Drink_glass"/>
+			<Value value="Pour_water"/>
+			<Value value="Climb_stairs"/>
+			<Value value="Eat_meat"/>
+			<Value value="Brush_teeth"/>
+			<Value value="Standup_chair"/>
+			<Value value="Sitdown_chair"/>
+			<Value value="Comb_hair"/>
+			<Value value="Descend_stairs"/>
+			<Value value="Use_telephone"/>
+			<Value value="Liedown_bed"/>
+			<Value value="Eat_soup"/>
+		</DataField>
+	</DataDictionary>
+	<TransformationDictionary/>
+	<RegressionModel functionName="classification" normalizationMethod="softmax">
+		<MiningSchema>
+			<MiningField name="class" usageType="target"/>
+		</MiningSchema>
+		<Output>
+			<OutputField name="pmml(prediction)" optype="categorical" dataType="string" isFinalResult="false"/>
+			<OutputField name="prediction" optype="continuous" dataType="double" feature="transformedValue">
+				<MapValues outputColumn="data:output" dataType="double">
+					<FieldColumnPair field="pmml(prediction)" column="data:input"/>
+					<InlineTable>
+						<row>
+							<data:input>Walk</data:input>
+							<data:output>0</data:output>
+						</row>
+						<row>
+							<data:input>Getup_bed</data:input>
+							<data:output>1</data:output>
+						</row>
+						<row>
+							<data:input>Drink_glass</data:input>
+							<data:output>2</data:output>
+						</row>
+						<row>
+							<data:input>Pour_water</data:input>
+							<data:output>3</data:output>
+						</row>
+						<row>
+							<data:input>Climb_stairs</data:input>
+							<data:output>4</data:output>
+						</row>
+						<row>
+							<data:input>Eat_meat</data:input>
+							<data:output>5</data:output>
+						</row>
+						<row>
+							<data:input>Brush_teeth</data:input>
+							<data:output>6</data:output>
+						</row>
+						<row>
+							<data:input>Standup_chair</data:input>
+							<data:output>7</data:output>
+						</row>
+						<row>
+							<data:input>Sitdown_chair</data:input>
+							<data:output>8</data:output>
+						</row>
+						<row>
+							<data:input>Comb_hair</data:input>
+							<data:output>9</data:output>
+						</row>
+						<row>
+							<data:input>Descend_stairs</data:input>
+							<data:output>10</data:output>
+						</row>
+						<row>
+							<data:input>Use_telephone</data:input>
+							<data:output>11</data:output>
+						</row>
+						<row>
+							<data:input>Liedown_bed</data:input>
+							<data:output>12</data:output>
+						</row>
+						<row>
+							<data:input>Eat_soup</data:input>
+							<data:output>13</data:output>
+						</row>
+					</InlineTable>
+				</MapValues>
+			</OutputField>
+			<OutputField name="probability(Walk)" optype="continuous" dataType="double" feature="probability" value="Walk"/>
+			<OutputField name="probability(Getup_bed)" optype="continuous" dataType="double" feature="probability" value="Getup_bed"/>
+			<OutputField name="probability(Drink_glass)" optype="continuous" dataType="double" feature="probability" value="Drink_glass"/>
+			<OutputField name="probability(Pour_water)" optype="continuous" dataType="double" feature="probability" value="Pour_water"/>
+			<OutputField name="probability(Climb_stairs)" optype="continuous" dataType="double" feature="probability" value="Climb_stairs"/>
+			<OutputField name="probability(Eat_meat)" optype="continuous" dataType="double" feature="probability" value="Eat_meat"/>
+			<OutputField name="probability(Brush_teeth)" optype="continuous" dataType="double" feature="probability" value="Brush_teeth"/>
+			<OutputField name="probability(Standup_chair)" optype="continuous" dataType="double" feature="probability" value="Standup_chair"/>
+			<OutputField name="probability(Sitdown_chair)" optype="continuous" dataType="double" feature="probability" value="Sitdown_chair"/>
+			<OutputField name="probability(Comb_hair)" optype="continuous" dataType="double" feature="probability" value="Comb_hair"/>
+			<OutputField name="probability(Descend_stairs)" optype="continuous" dataType="double" feature="probability" value="Descend_stairs"/>
+			<OutputField name="probability(Use_telephone)" optype="continuous" dataType="double" feature="probability" value="Use_telephone"/>
+			<OutputField name="probability(Liedown_bed)" optype="continuous" dataType="double" feature="probability" value="Liedown_bed"/>
+			<OutputField name="probability(Eat_soup)" optype="continuous" dataType="double" feature="probability" value="Eat_soup"/>
+		</Output>
+		<RegressionTable intercept="1.2551238628879768" targetCategory="Walk"/>
+		<RegressionTable intercept="0.5530966562171016" targetCategory="Getup_bed"/>
+		<RegressionTable intercept="0.4885197633921276" targetCategory="Drink_glass"/>
+		<RegressionTable intercept="0.45894796235239466" targetCategory="Pour_water"/>
+		<RegressionTable intercept="0.422011868785593" targetCategory="Climb_stairs"/>
+		<RegressionTable intercept="0.17280551809096908" targetCategory="Eat_meat"/>
+		<RegressionTable intercept="0.12387333367794334" targetCategory="Brush_teeth"/>
+		<RegressionTable intercept="-0.03398425834705791" targetCategory="Standup_chair"/>
+		<RegressionTable intercept="-0.04809952429993674" targetCategory="Sitdown_chair"/>
+		<RegressionTable intercept="-0.1056372081326859" targetCategory="Comb_hair"/>
+		<RegressionTable intercept="-0.5326548227130731" targetCategory="Descend_stairs"/>
+		<RegressionTable intercept="-0.5566664978524256" targetCategory="Use_telephone"/>
+		<RegressionTable intercept="-0.8294042387228222" targetCategory="Liedown_bed"/>
+		<RegressionTable intercept="-1.3679324153361043" targetCategory="Eat_soup"/>
+	</RegressionModel>
+</PMML>
