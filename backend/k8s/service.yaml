@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: etl-ml-backend
+  namespace: default
+  labels:
+    app: etl-ml-backend
+spec:
+  type: ClusterIP
+  selector:
+    app: etl-ml-backend
+  ports:
+  - name: http
+    port: 8001
+    targetPort: http
+    protocol: TCP
+  sessionAffinity: None
