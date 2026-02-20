@@ -334,6 +334,42 @@ Navigate to `http://localhost:3000` to see:
 - **Model Accuracy Trend**: Version-over-version improvement
 - **Data Quality Metrics**: Completeness, accuracy, consistency scores
 
+---
+
+## 📸 Application Screenshots
+
+### Dashboard Overview
+
+<div align="center">
+
+![Dashboard](assets/images/dashboard.PNG)
+
+*Main dashboard showing real-time statistics, pipeline trends, model accuracy, and data quality metrics*
+
+</div>
+
+### Experiments Tracking
+
+<div align="center">
+
+![Experiments](assets/images/experiments.PNG)
+
+*ML experiment tracking interface with multi-algorithm support and comprehensive metrics visualization*
+
+</div>
+
+### Pipeline Management
+
+<div align="center">
+
+![Pipelines](assets/images/pipelines.PNG)
+
+*Visual pipeline management showing ETL workflows, execution status, and run history*
+
+</div>
+
+---
+
 ### 3. Run a Pipeline
 
 ```bash
